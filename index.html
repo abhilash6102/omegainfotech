@@ -1,5 +1,6 @@
 <html>
 <head>
+  <title>Home | Omega InfoTech</title>
   <link rel="stylesheet" href="academy.css">
   <link rel="shortcut icon" type="image/png" href="logo.png" sizes="25x25" />
   <meta charset="UTF-8">
@@ -16,7 +17,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script>
 $(document).ready(function() {
@@ -100,6 +101,17 @@ body {
     font-weight: 1000;
     margin-bottom: 60px;
   }
+  .font-weight-bold{
+    font-size: 27px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 1000;
+    position: relative;
+    top: 8px;
+    right: 10px;
+  }
+
+  
 </style>
 </head>
 
@@ -107,23 +119,22 @@ body {
 <!-- <div class="academy-menu-item" data-toggle="modal" data-target="#exampleModalLong"> Academy </div> -->
 
 <!--navbar-->
-
-
-<nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top bg-body-tertiary">
+<nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top bg-body-tertiary" >
 
   <div class="container">
     <!-- Logo with text -->
     <a class="navbar-brand" href="#">
       <div class="row">
-        <div class="col">
+        <div class="col-auto">
           <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="Your Logo">
         </div>
         <div class="col">
-         <h2>Omega InfoTech</h2>
+          <h2 class="d-lg-none">Omega InfoTech</h2>
+          <h2 class="d-none d-lg-block">Omega InfoTech</h2>
         </div>
       </div>
     </a>
-
+    
     <!-- Hamburger menu button for small screens -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -147,11 +158,14 @@ body {
     </div>
   </div>
 </nav>
+<!--navbar end-->
+
 
 <!--background image-->
-<div class="container-fluid">
+<div class="container-fluid" >
   <div class="position-relative">
-    <img src="image6.jpeg" class="img-fluid w-100" alt="Responsive image">
+    <img src="image6.jpeg" class="img-fluid w-100" id="image-1"alt="Responsive image">
+    <img src="back-img.jpg" class="img-fluid w-100" id="image-2" alt="Responsive image">
     <div class="position-absolute" style="left:5%; bottom:33%;">
       <h2 class="text-white">Online learning <br>platform</h2>
       <h5>Build your career and skills with online education through <br>courses, certificates, and degrees.</h5>
@@ -175,15 +189,12 @@ body {
                 <li><img class="course-icon" src="./java.png"><span class="course-title"><a href="./java-course-details.html">Java</a></span></li>
                 <li><img class="course-icon" src="./python.png"><span class="course-title">Python</span></li>
               </ul>
-              
             </div>
-          
         </div>
         <div class="col-sm-3"></div>
         <div class="col-sm-3"></div>
         <div class="col-sm-3"></div>
       </div>
-
     </div>
   </div>
 </div>
@@ -195,13 +206,13 @@ body {
 
 
 <!-- default academy launch body -->
-<div class="main-content">
+<div class="main-content" >
   <div class="container-fluid" style="position: relative;bottom: 80px;">
    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
     <!-- card begin -->
     <div class="col" >
-      <div class="card" style="width:22rem;">
-        <img class="card-img-top card-image" src="card-image1.webp">
+      <div class="card">
+        <img class="card-img-top card-image" src="card-image1.webp" style="height: 220px;">
         <div class="card-body">
           <h5 class="card-title">Software Training</h5>
           <p class="card-text">Elevate your skills with our comprehensive software training. Unlock the potential of software development and stay ahead in a fast-paced digital world.</p>
@@ -217,8 +228,8 @@ body {
 
     <!-- card begin -->
     <div class="col">
-      <div class="card" style="width:22rem;">
-        <img class="card-img-top card-image" src="card-image3.jpg" alt="Card image cap">
+      <div class="card" >
+        <img class="card-img-top card-image" src="card-image3.jpg" alt="Card image cap" style="height: 220px;">
         <div class="card-body">
           <h5 class="card-title">Project Training</h5>
           <p class="card-text">Master project management techniques with our in-depth project training. Learn the art of successful project execution and take the lead in your career.</p>
@@ -234,8 +245,8 @@ body {
 
     <!-- card begin -->
     <div class="col">
-      <div class="card" style="width: 22rem;">
-        <img class="card-img-top card-image" src="card-image-2.webp" alt="Card image cap" style="height: 210px;">
+      <div class="card">
+        <img class="card-img-top card-image" src="card-image-2.webp" alt="Card image cap" style="height: 220px;">
         <div class="card-body">
           <h5 class="card-title">Internship</h5>
           <p class="card-text">Gain practical experience and real-world insights with our internship programs. Discover the bridge between classroom learning and on-the-job expertise.</p>
@@ -251,8 +262,8 @@ body {
 
     <!-- card begin -->
     <div class="col">
-      <div class="card" style="width: 22rem;">
-        <img class="card-img-top card-image" src="card-image4.jpg" alt="Card image cap" style="height: 210px;">
+      <div class="card">
+        <img class="card-img-top card-image" src="card-image4.jpg" alt="Card image cap" style="height: 220px;">
         <div class="card-body">
           <h5 class="card-title">Academy Projects</h5>
           <p class="card-text">Bring your innovative ideas to life with our project-based learning. Transform your concepts into tangible solutions and unleash your creativity.</p>
@@ -272,9 +283,8 @@ body {
 
 
 <!--explore more subjects-->
-
-<div class="topic-area section-padding40">
-  <div class="container-fluid" style="margin-top:20px;">
+<div class="topic-area section-padding40" >
+  <div class="container-xl" style="margin-top:20px;">
           <div class="row justify-content-center">
               <div class="col-xl-7 col-lg-8">
                   <div class="section-tittle text-center mb-55">
@@ -284,111 +294,177 @@ body {
           </div>
     
    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
-  <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="single-topic text-center mb-30">
+    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+      <div class="single-topic text-center mb-30 position-relative">
           <div class="topic-img">
               <img src="topic1.png" alt>
-              <div class="topic-content-box">
-                  <div class="topic-content">
-                      <h3><a href="#">Programing</a></h3>
-                  </div>
-              </div>
+              <div class="overlay"></div>
+        <div class="topic-content position-absolute top-50 start-50 translate-middle">
+            <h3><a href="#"></a>Programming</h3>
+        </div>
           </div>
       </div>
   </div>
-  <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="single-topic text-center mb-30">
-          <div class="topic-img">
-              <img src="topic2.png" alt>
-              <div class="topic-content-box">
-                  <div class="topic-content">
-                      <h3><a href="#">Programing</a></h3>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="single-topic text-center mb-30">
-          <div class="topic-img">
-              <img src="topic3.png" alt>
-              <div class="topic-content-box">
-                  <div class="topic-content">
-                      <h3><a href="#">Programing</a></h3>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="single-topic text-center mb-30">
-          <div class="topic-img">
-              <img src="topic4.png" alt>
-              <div class="topic-content-box">
-                  <div class="topic-content">
-                      <h3><a href="#">Programing</a></h3>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="single-topic text-center mb-30">
-          <div class="topic-img">
-              <img src="topic5.png" alt>
-              <div class="topic-content-box">
-                  <div class="topic-content">
-                      <h3><a href="#">Programing</a></h3>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="single-topic text-center mb-30">
-          <div class="topic-img">
-              <img src="topic6.png" alt>
-              <div class="topic-content-box">
-                  <div class="topic-content">
-                      <h3><a href="#">Programing</a></h3>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="single-topic text-center mb-30">
-          <div class="topic-img">
-              <img src="topic7.png" alt>
-              <div class="topic-content-box">
-                  <div class="topic-content">
-                      <h3><a href="#">Programing</a></h3>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="single-topic text-center mb-30">
-          <div class="topic-img">
-              <img src="topic8.png" alt>
-              <div class="topic-content-box">
-                  <div class="topic-content">
-                      <h3><a href="#">Programing</a></h3>
-                  </div>
-              </div>
-          </div>
+  
+  <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+    <div class="single-topic text-center mb-30 position-relative">
+        <div class="topic-img">
+            <img src="topic2.png" alt>
+            <div class="overlay"></div>
+            <div class="topic-content position-absolute top-50 start-50 translate-middle">
+                <h3><a href="#"></a>Programming</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+    <div class="single-topic text-center mb-30 position-relative">
+        <div class="topic-img">
+            <img src="topic3.png" alt>
+            <div class="overlay"></div>
+        <div class="topic-content position-absolute top-50 start-50 translate-middle">
+            <h3><a href="#"></a>Programming</h3>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+  <div class="single-topic text-center mb-30 position-relative">
+      <div class="topic-img">
+          <img src="topic4.png" alt>
+          <div class="overlay"></div>
+        <div class="topic-content position-absolute top-50 start-50 translate-middle">
+            <h3><a href="#"></a>Programming</h3>
+        </div>
       </div>
   </div>
 </div>
-<div class="row justify-content-center">
+
+  <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+    <div class="single-topic text-center mb-30 position-relative">
+        <div class="topic-img">
+            <img src="topic5.png" alt>
+            <div class="overlay"></div>
+        <div class="topic-content position-absolute top-50 start-50 translate-middle">
+            <h3><a href="#"></a>Programming</h3>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+  <div class="single-topic text-center mb-30 position-relative">
+      <div class="topic-img">
+          <img src="topic6.png" alt>
+          <div class="overlay"></div>
+        <div class="topic-content position-absolute top-50 start-50 translate-middle">
+            <h3><a href="#"></a>Programming</h3>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+  <div class="single-topic text-center mb-30 position-relative">
+      <div class="topic-img">
+          <img src="topic7.png" alt>
+          <div class="overlay"></div>
+        <div class="topic-content position-absolute top-50 start-50 translate-middle">
+            <h3><a href="#"></a>Programming</h3>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+<div class="single-topic text-center mb-30 position-relative">
+    <div class="topic-img">
+        <img src="topic8.png" alt>
+        <div class="overlay"></div>
+        <div class="topic-content position-absolute top-50 start-50 translate-middle">
+            <h3><a href="#"></a>Programming</h3>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row justify-content-center" style="margin-top: 40px;">
   <div class="col-xl-12">
       <div class="section-tittle text-center mt-20">
-          <a href="courses.html" class="border-btn">View More Subjects</a>
+        <a href="#"><button class="button-48" role="button" style=" padding: 1.2em 3.5em; "><span class="text">View More</span></button></a>
       </div>
   </div>
 </div>
-</div>
+
+<!--footer-->
+
+<div class="blockcode">
+  <div class="header" style="margin-bottom: 100px;"></div>
+
+  <footer class="page-footer shadow" style="background-color: rgb(241, 241, 241)">
+    <div class="d-flex flex-column mx-auto py-5" style="width: 80%">
+      <div class="d-flex flex-wrap justify-content-between">
+        <div>
+          
+            <img alt="logo" src="logo.png" width="30px" />
+            <span class="ms-3 h5 font-weight-bold">Omega InfoTech</span>
+          <p class="my-3" style="width: 257px; font-family: 'Lato'; font-size: 16px;" >
+            Gateway to acquire valuable skills and knowledge, empowering them to thrive in a dynamic digital landscape and advance their careers.
+          </p>
+          <span class="mt-4">
+            <button class="btn btn-dark btn-flat p-2">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </button>
+            <button class="btn btn-dark btn-flat p-2">
+              <i class="fa fa-twitter"></i>
+            </button>
+            <button class="btn btn-dark btn-flat p-2">
+              <i class="fa fa-instagram"></i>
+            </button>
+          </span>
+        </div>
+        <div class="tags">
+        <div style="font-family: 'Lato';">
+          <p class="h5 mb-4" style="font-weight: 600">Omega InfoTech</p>
+          <ul class="p-0" style="list-style: none; cursor: pointer">
+            <li class="my-2">
+              <a class="text-dark" href="/">Home</a>
+            </li>
+            <li class="my-2">
+              <a class="text-dark" href="/">Courses</a>
+            </li>
+            <li class="my-2">
+              <a class="text-dark" href="/">About Us</a>
+            </li>
+            <li class="my-2">
+              <a class="text-dark" href="/">contact</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div style="font-family: 'Lato';">
+          <p class="h5 mb-4" style="font-weight: 600">Help</p>
+          <ul class="p-0" style="list-style: none; cursor: pointer">
+            <li class="my-2">
+              <a class="text-dark" href="/">Support</a>
+            </li>
+            <li class="my-2">
+              <a class="text-dark" href="/">Sign Up</a>
+            </li>
+            <li class="my-2">
+              <a class="text-dark" href="/">Sign In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      <small class="text-center mt-5" style="font-family: 'Lato'; font-size: 16px;" >&copy; Copyright 2019 Omega InfoTech. All rights reserved.</small>
+    </div>
+  </footer>
 </div>
 </body>
 </html>
@@ -396,4 +472,4 @@ body {
 
 
 
->>>>>>> 89450b7 (changed files)
+
