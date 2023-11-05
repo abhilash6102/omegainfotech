@@ -1,0 +1,309 @@
+<html>
+<head>
+<<<<<<< HEAD
+=======
+  <link rel="shortcut icon" type="image/png" href="logo.png" sizes="25x25" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Comapatible" content="IE=edge">
+  <meta name="description" content="sample code">
+  <meta name="keywords" content="html css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+>>>>>>> 89450b7 (changed files)
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function() {
+    $("#MyModal").modal();
+  });
+</script>
+<style>
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+
+body {
+    font-family: serif;
+}
+.modal-dialog {
+    position: absolute;
+    width: 80%;
+    margin: 0.5rem;
+    pointer-events: none;
+    top: 31px;
+}
+
+.modal-dialog {
+    max-width: 100%;
+	}
+	
+.horizontalLine{
+	border-bottom: 1px solid gray;
+	}
+.course-icon {
+    vertical-align: middle;
+    height: 16px;
+}
+.content {
+    padding: 10px 0px 0 11px;
+    border-right: 1px solid #e7e0e0;
+}
+.course-type-title {
+  border-bottom: 1px solid #d3cfcf;
+  margin: 0 5px 0 5px;
+}
+.course-title{
+  padding: 0 5px 0 5px
+}
+.card-image{
+  height: 100px;
+  width: 100px;
+  padding: 15px;
+}
+.main-content {
+    position: relative;
+    top: 10%;
+    padding: 20px;
+}
+.academy-menu-item{
+  cursor: pointer;
+  font-weight: bold;
+}
+.total-current-running-batches{
+  padding: 20%;
+  text-align: center;
+}
+.java-content-image{
+  width: 100%;
+}
+.card-theme-1{
+  background: #e0cacc;
+  height: 100%;
+}
+.card-theme-1{
+  height: 100% !important;
+}
+.text-white{
+  color:white;
+}
+.course-content-area{
+    height: 97%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-top:5px
+}
+.price-card{
+  padding: 0 2px;
+}
+</style>
+</head>
+
+<body><!-- Button trigger modal -->
+<!-- <div class="academy-menu-item" data-toggle="modal" data-target="#exampleModalLong"> Academy </div> -->
+
+<!-- course menu -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="row">
+        <div class="col-sm-3">
+            <div class="content">
+              <div class="course-type-title">
+                Techinical Courses
+              </div>
+              <ul>
+                <li><img class="course-icon" src="./java.png"><span class="course-title"><a href="./java-course-details.html">Java</a></span></li>
+                <li><img class="course-icon" src="./python.png"><span class="course-title">Python</span></li>
+              </ul>
+              
+            </div>
+          
+        </div>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- course menu end-->
+
+<!-- default academy launch body -->
+<div class="main-content">
+    <div class="row">
+      <!-- card begin -->
+        <div class="col-md-3 price-card">
+          <div class="card">
+            
+            <div class="card-body">
+              <h5 class="card-title">Course details</h5>
+              <p class="card-text ">
+              <ul>
+                <li data-toggle="collapse" href="#javaContent" role="button" aria-expanded="false" aria-controls="javaContent">Core Java</li>
+                <li>Advanced Java</li>
+                <li>Spring, Spring boot</li>
+                <li>Microservices</li>
+                <li>Data JPA, Hibernate</li>
+              </ul>
+            </p>
+            <span>Click on course to view more.</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-sm-3 price-card">
+              <div class="card card-theme-1">
+                <div class="card-body">
+                  <h5 class="card-title text-white">JAVA</h5>
+                  <p class="card-text "><h4>45 days Course</h4> <p>
+                   Want to be a core & advanced java developer grab this course.</p>
+                  </p>
+                  <button class="btn btn-light">register Now @12000/-</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-3 price-card">
+              <div class="card card-theme-1">
+                <div class="card-body">
+                  <h5 class="card-title text-white">DB & UI Technologies</h5>
+                  <p class="card-text "><h4>15 days Course</h4> <p>
+                   Learn from industry experts from our Development course and stay ahead of curve.</p>
+                  </p>
+                  <button class="btn btn-light">register Now @12000/-</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-3 price-card">
+              <div class="card card-theme-1">
+                <div class="card-body">
+                  <h5 class="card-title text-white">JAVA FULL STACK</h5>
+                  <p class="card-text ">
+                    <h4>3 Months Course</h4>
+                   Learn from industry experts from our Development course and stay ahead of curve.
+                  </p>
+                  <button class="btn btn-light">register Now @18000/-</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-3 price-card">
+              <div class="card card-theme-1">
+                <div class="card-body">
+                  <h5 class="card-title text-white">WEB FRAME WORK</h5>
+                  <p class="card-text ">
+                    <h4>2.5 Months Course</h4>
+                   Learn from industry experts from our Development course and stay ahead of curve.
+                  </p>
+                  <button class="btn btn-light">register Now @16000/-</button>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+          
+        </div>
+      <!-- card end -->
+      
+    </div>
+
+    <div class="collapse" id="javaContent">
+      <div class="card card-body course-content-area">
+        <h2><span id="Core_Java_Training_Overview">Core Java Training Overview</span></h2>
+        <p>This Core Java Training is by the Real-Time Professionals and Teaching Experts.</p>
+        <ul>
+        <li>Entire SCJP syllabus will be covered</li>
+        <li>Every program execution will be explained with Compiler and JVM Architectures</li>
+        <li>Every program memory diagram will be clearly explained with <strong>JVM Architecture</strong></li>
+        <li>1000+ Programs will be covered in training as well as in practice material</li>
+        <li>Entire list of interview questions will be covered on every concept</li>
+        <li>Every concept will be clearly explained with real-time project scenarios</li>
+        <li>Every concept will be explained with <strong>MVC</strong> and LC-RP Architectures</li>
+        <li>Therefore you will get good knowledge in designing and developing projects</li>
+        <li>So that you can clear all interviews as a fresher or as an experienced</li>
+        </ul>
+        <h3><span id="Core_Java_Training_Prerequisites">Core Java Training Prerequisites</span></h3>
+        <ul>
+        <li>No Prerequisite, Anyone Can Learn</li>
+        </ul>
+        <h3><span id="Core_Java_Course_Duration">Core Java Course Duration</span></h3>
+        <ul>
+        <li>Normal Track 60 Working days, daily one and half hour</li>
+        <li>Fast Track 40 Working days, daily two hours</li>
+        <li>Core Java Training Course Overview</li>
+        </ul>
+        <h2><span id="Core_Java_Training_Content_Overview">Core Java Training Content Overview</span></h2>
+        <h3><span id="Java_Language_OOPS_Programming">Java Language, OOPS, Programming</span></h3>
+        <ol>
+        <li>Introduction to Java and OOPS</li>
+        <li>Java Tokens- Comments, Identifiers, Keywords, Separators</li>
+        <li>Working with Java Editor Softwares – Editplus, NetBeans, Eclipse</li>
+        <li>Packages with static imports</li>
+        <li>Working with jar</li>
+        <li>Modifiers – File level, Access level and Non-access level</li>
+        <li>Datatypes, Literals, Variables, Type Conversion, Casting &amp; Promotion</li>
+        <li>Reading runtime values from keyboard and Properties File</li>
+        <li>Operators and Control Statements</li>
+        <li>Method and Types of methods</li>
+        <li>Variable and Types of Variables</li>
+        <li>Constructor and Types of constructors</li>
+        <li>Block and Types of Blocks</li>
+        <li>Declarations, Invocations and Executions</li>
+        <li>Compiler &amp; JVM Architecture with Reflection API</li>
+        <li>Static Members and their execution control flow</li>
+        <li>Non-Static Members and their execution control flow</li>
+        <li>Final Variables and their rules</li>
+        <li>Classes and Types of classes</li>
+        <li>OOPS- Fundamentals, Models, Relations and Principles</li>
+        <li>Coupling and Cohesion (MVC and LCRP Architectures)</li>
+        <li>Types of objects &amp; Garbage Collection</li>
+        <li>Arrays and Var-arg types</li>
+        <li>Enum and Annotation</li>
+        <li>Design Patterns</li>
+        </ol>
+        <h3><span id="Java_API_and_Project">Java API and Project</span></h3>
+        <ol>
+        <li>API and API Documentation</li>
+        <li>Fundamental Classes – Object, Class, System, Runtime</li>
+        <li>String Handling</li>
+        <li>Exception Handling and Assertions</li>
+        <li>Multithreading with JVM Architecture</li>
+        <li>IO Streams (File IO)</li>
+        <li>Networking (Socket Programming)</li>
+        <li>Wrapper Classes with Auto boxing and unboxing</li>
+        <li>Collections with Generics</li>
+        <li>Java 5, 6, 7, 8 new features</li>
+        <li>Inner classes</li>
+        <li>AWT, Swings, Applet</li>
+        <li>Regular Expressions</li>
+        <li>Formatting date, time (java.text package)</li>
+        </ol>
+      </div>
+    </div>
+</div>
+</html>
